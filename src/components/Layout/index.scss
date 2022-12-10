@@ -1,0 +1,17 @@
+*{
+    overflow: hidden;
+}
+div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.preload *{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+.title {
+    font-size: 180px !important;
+}

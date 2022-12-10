@@ -1,0 +1,54 @@
+
+.animated-text-holder{
+    position:relative;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+
+.text-animate{
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    font-size: 0px;
+    color: black;
+    font-family: sans-serif;
+
+}
+
+
+@for $i from 1 to 17 {
+    .id-#{$i} {
+        animation-name: theUhh;
+        animation-duration: 1ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: #{4 + $i/8}s;
+    }
+}
+
+@keyframes theUhh {
+    0%{
+        font-size: 0px;
+        opacity: 0;
+    }
+    100%{
+        font-size: 90px;
+        opacity: .6;
+    }
+}
+
+.id-9, .id-8{
+    font-size: 70px !important;
+}
+
+@for $j from 10 to 17 {
+    .id-#{$j} {
+        margin-top: -50px;
+        font-size: 20vw !important;
+    }
+}
+
+
+
+
